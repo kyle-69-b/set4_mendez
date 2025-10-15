@@ -43,7 +43,7 @@ class TravelGuide extends StatelessWidget {
               subtitle: Text(country, style: TextStyle(fontSize: 16)),
               trailing: ElevatedButton(
                 onPressed: () {
-                  // Show SnackBar when "View Details" button is pressed
+            
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Viewing details for $place, $country.')),
                   );
@@ -51,7 +51,7 @@ class TravelGuide extends StatelessWidget {
                 child: Text('View Details'),
               ),
               onTap: () {
-                // Show SnackBar when destination is tapped
+              
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text('You selected $place in $country!')),
                 );
